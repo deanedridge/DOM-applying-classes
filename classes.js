@@ -21,7 +21,7 @@ function one () {
 }
 
 // CREATE FUNCTION two HERE
-function one () {
+function two () {
   // First, we have to find the element:
   var two = document.getElementById('two')
 
@@ -40,9 +40,8 @@ function three () {
 
 // CREATE FUNCTION makeVisible HERE
 function makeVisible () {
-  //
-  var arrayOfClasses = document.getElementsByClassName('invisible')[0]
-  arrayOfClasses.classList.add('visible')
+  // assign the first required class to our variable requiredClass
+  var requiredClass = document.getElementsByClassName('invisible')[0]
+  // We now have the variable requiredClass and use it to add a class name 
+  requiredClass.classList.add('visible')
 }
-
-console.log(arrayOfClasses)
