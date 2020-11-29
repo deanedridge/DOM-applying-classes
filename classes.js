@@ -5,10 +5,11 @@ document.addEventListener('DOMContentLoaded', start)
 
 function start () {
   // The first example is done for you. Uncomment the line below and reload the browser.
-   one()
-   two()
-   three()
-  // Your turn! Create a new function called `two`, then call it from here.
+  one()
+   // Your turn! Create a new function called `two`, then call it from here.
+  two()
+  three()
+  makeVisible()
 }
 
 function one () {
@@ -38,3 +39,10 @@ function three () {
 }
 
 // CREATE FUNCTION makeVisible HERE
+function makeVisible () {
+  //
+  var arrayOfClasses = document.getElementsByClassName('invisible')[0]
+  arrayOfClasses.classList.add('visible')
+}
+
+console.log(arrayOfClasses)
